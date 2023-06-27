@@ -10,7 +10,7 @@ const Yorpost = () => {
     const { refetch, data: postget = [] } = useQuery({
         queryKey: ['postget '],
         queryFn: async () => {
-            const response = await fetch(`http://localhost:5000/postget?users=${users}`)
+            const response = await fetch(`https://atg-task-2-server.vercel.app/postget?users=${users}`)
             return response.json()
 
         },

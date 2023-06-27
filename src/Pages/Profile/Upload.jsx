@@ -23,7 +23,7 @@ const Upload = () => {
         console.log(addpost)
 
 
-        fetch('http://localhost:5000/datapost', {
+        fetch('https://atg-task-2-server.vercel.app/datapost', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

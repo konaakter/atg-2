@@ -19,7 +19,7 @@ const Bannar = () => {
     const { refetch, data: postget = [] } = useQuery({
         queryKey: ['postget '],
         queryFn: async () => {
-            const response = await fetch(`http://localhost:5000/postget`)
+            const response = await fetch(`https://atg-task-2-server.vercel.app/postget`)
             return response.json()
 
         },

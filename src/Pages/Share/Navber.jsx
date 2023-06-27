@@ -18,19 +18,19 @@ const Navber = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-sky-600 rounded-box w-52">
-                           
-                            <li><Link>Home</Link></li>
-                            <li>
-                                <Link> contract</Link>
-                            </li>
-                            <li><Link>About</Link></li>
-                        
+
+                                <li><Link>Home</Link></li>
+                                <li>
+                                    <Link> contract</Link>
+                                </li>
+                                <li><Link>About</Link></li>
+
                             </ul>
                         </div>
-                        <div className= 'flex items-center '>
+                        <div className='flex items-center '>
                             <img src={logo1} alt="" />
                             <h1 className=' text-3xl'>ikriki</h1>
-                           
+
                         </div>
 
                     </div>
@@ -45,20 +45,20 @@ const Navber = () => {
                     </div>
                     <div className="navbar-end space-x-2">
                         {
-                             users && <div className=' border rounded-full p-3 bg-white'>
-                             <Link to='profile'> <FaUserAlt className=' text-3xl text-gray-500'></FaUserAlt></Link>
-                          </div>
+                            users && <div className=' border rounded-full p-3 bg-white'>
+                                <Link to='profile'> <FaUserAlt className=' text-3xl text-gray-500'></FaUserAlt></Link>
+                            </div>
                         }
-                        
-                    {
 
-                        users ? <Link to='/login'><a className="btn">Logout</a></Link> : <Link to='/login'><a className="btn">Login</a></Link>
-                    }
-                        
+                        {
+
+                            users ? <Link to='/login'><a className="btn">Logout</a></Link> : <Link to='/login'><a className="btn">Login</a></Link>
+                        }
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
     );
 };
